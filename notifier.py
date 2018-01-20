@@ -31,4 +31,4 @@ dinner_menu = soup.find('div', attrs={'id': 'meal_3'})
 if dinner_menu is not None and DISH in dinner_menu.text:
 	sendAlert(DISH + " is on the menu on " + str(check_date) + "!")
 else:
-	print DISH + " is not on the menu on " + str(check_date) + "."
+	sendAlert(DISH + " is not on the menu on " + str(check_date) + ".")
